@@ -1,0 +1,937 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1D1D1D;
+}
+
+div.container {
+  width: 72%;
+  margin: auto;
+}
+
+div.container-f {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+
+.hidden-B {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+h1::-moz-selection {
+  background: #1abc9c;
+}
+
+h1::selection {
+  background: #1abc9c;
+}
+
+p::-moz-selection {
+  background: #1abc9c;
+}
+
+p::selection {
+  background: #1abc9c;
+}
+
+span::-moz-selection {
+  background: #1abc9c;
+}
+
+span::selection {
+  background: #1abc9c;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1abc9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1abc9c;
+}
+
+@media screen and (max-width: 1295px) {
+  nav {
+    -ms-flex-preferred-size: 50% !important;
+        flex-basis: 50% !important;
+  }
+  nav a {
+    font-size: 0.9rem !important;
+  }
+  .char {
+    font-size: 3rem !important;
+  }
+  div.slide div.center p.detail {
+    font-size: 1.5rem;
+  }
+  div.logo {
+    -ms-flex-preferred-size: 25% !important;
+        flex-basis: 25% !important;
+    min-width: 25%;
+  }
+  div.logo h1 {
+    font-size: 1.4em !important;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  header nav ul.navbar > li a.nav-link {
+    display: none !important;
+  }
+  div.bg-about {
+    display: none;
+  }
+  div.about-me div.about-me-content {
+    width: 100% !important;
+  }
+  div.about-me div.about-me-content h2 {
+    font-size: 3.4rem !important;
+  }
+  div.about-me div.about-me-content p {
+    font-size: 1rem !important;
+  }
+  .char {
+    font-size: 5vw !important;
+  }
+  div.slide div.center p.detail {
+    font-size: 3vw !important;
+  }
+  i.hidden {
+    display: inline-block !important;
+    font-size: 2rem;
+  }
+  i.hidden:hover {
+    cursor: pointer;
+  }
+  div.logo {
+    -ms-flex-preferred-size: 55% !important;
+        flex-basis: 55% !important;
+  }
+  div.logo h1 {
+    font-size: 1.2em !important;
+  }
+}
+
+@media screen and (max-width: 1498px) {
+  div.bg-about {
+    top: -1rem !important;
+    left: 41vw !important;
+    font-size: 15rem !important;
+  }
+}
+
+@media screen and (max-width: 1344px) {
+  div.bg-about {
+    top: -1rem !important;
+    left: 35vw !important;
+    font-size: 13rem !important;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  div.bg-about {
+    top: -1rem !important;
+    left: 25vw !important;
+    font-size: 13rem !important;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  div.skill-card {
+    width: 30% !important;
+  }
+}
+
+@media screen and (max-width: 1251px) {
+  div.skills {
+    margin-top: 15% !important;
+  }
+  div.row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  div.row div.skill-card {
+    width: 100% !important;
+  }
+  div.row div.skill-card p {
+    font-size: 0.9rem !important;
+  }
+  div.row div.skill-card h2 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  div.skills {
+    margin-top: 35% !important;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  div.projects div.bg-projects {
+    display: none;
+  }
+  div.projects div.row-p div.img-box {
+    width: 50% !important;
+  }
+  div.projects div.row-p div.img-box div.overlay {
+    height: 70vh !important;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  div.projects div.row-p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.projects div.row-p div.img-box {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  div.social-media ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #252525;
+  color: #eadeda;
+  padding: 1.3em;
+  min-width: 400px;
+  -webkit-box-shadow: 2px 4px 3px #252525;
+          box-shadow: 2px 4px 3px #252525;
+}
+
+header div.container-f div.logo {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+header div.container-f div.logo h1 {
+  font-size: 2em;
+}
+
+header div.container-f div.logo h1:hover code {
+  color: #1abc9c;
+  cursor: pointer;
+}
+
+header div.container-f div.logo span {
+  color: #df1916;
+}
+
+header div.container-f div.logo code {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.5em;
+}
+
+header div.container-f nav {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  min-width: 10%;
+}
+
+header div.container-f nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.container-f nav ul li {
+  font-weight: bold;
+  list-style: none;
+}
+
+header div.container-f nav ul li i.hidden {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header div.container-f nav ul li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #eadeda;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header div.container-f nav ul li a:hover {
+  color: #1abc9c;
+}
+
+main {
+  margin-top: 5%;
+}
+
+main div.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center {
+  background: url(../Images/landing1.jpg);
+  background-size: cover;
+  height: 90vh;
+  background-size: cover;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .center p {
+  width: 70%;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+main .detail {
+  font-size: 2rem;
+  margin-top: 15px;
+  color: #999797 !important;
+}
+
+main .char {
+  font-weight: bold;
+  font-size: 3.7rem;
+  height: 40px;
+  -webkit-animation: an 3s ease-out 1 both;
+          animation: an 3s ease-out 1 both;
+  display: inline-block;
+}
+
+@-webkit-keyframes an {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(500px) translate3d(0, 0, 0);
+            transform: perspective(500px) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes an {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(500px) translate3d(0, 0, 0);
+            transform: perspective(500px) translate3d(0, 0, 0);
+  }
+}
+
+div.burger-menu {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.98);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.burger-menu ul.burger-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.burger-menu ul.burger-ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+div.burger-menu ul.burger-ul li a.burger-link {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+div.about-me {
+  margin-top: 4%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+div.about-me div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.about-me div.container div.about-me-content {
+  width: 75%;
+}
+
+div.about-me div.container div.about-me-content h2 {
+  color: #1abc9c;
+  font-weight: 400;
+  position: relative;
+  font-size: 4.4rem;
+  line-height: 6.7rem;
+}
+
+div.about-me div.container div.about-me-content p {
+  color: #a1a0a0;
+  font-size: 1.2em;
+  padding: 8px 0;
+  line-height: 2.2;
+  font-weight: 300;
+}
+
+div.about-me div.container div.about-me-content a {
+  border-radius: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid #1abc9c;
+  padding: 14px 65px;
+  margin-top: 25px;
+}
+
+div.about-me div.container div.about-me-content a:hover {
+  background-color: #1abc9c;
+  color: #1d1d1d;
+}
+
+div.about-me div.container div.bg-about {
+  z-index: -1;
+  position: absolute;
+  font-size: 20rem;
+  top: -5rem;
+  left: 30vw;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+div.skills {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 8%;
+}
+
+div.skills div.bg-skills {
+  z-index: -1;
+  position: absolute;
+  font-size: 20rem;
+  top: -9rem;
+  left: 20vw;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+div.skills div.container {
+  width: 77% !important;
+}
+
+div.skills div.container h2 {
+  text-align: center;
+  color: #1abc9c;
+  font-weight: 400;
+  position: relative;
+  font-size: 4.4rem;
+  line-height: 6.7rem;
+}
+
+div.skills div.container p {
+  text-align: center;
+  color: #a1a0a0;
+  font-size: 1.2rem;
+  padding: 8px 0;
+  line-height: 2.2;
+  font-weight: 300;
+}
+
+div.skills div.container div.row {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.skills div.container div.row div.skill-card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 0px 6px 1px #313131;
+          box-shadow: 0px 0px 6px 1px #313131;
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 30%;
+  padding: 60px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+div.skills div.container div.row div.skill-card:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
+}
+
+div.skills div.container div.row div.skill-card:hover i {
+  color: white;
+}
+
+div.skills div.container div.row div.skill-card:hover p {
+  color: white;
+}
+
+div.skills div.container div.row div.skill-card h2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.8vw;
+  line-height: 6.7rem;
+}
+
+div.skills div.container div.row div.skill-card i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #1abc9c;
+  font-size: 4rem;
+}
+
+div.skills div.container div.row div.skill-card p {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #a1a0a0;
+  font-size: 1.2em;
+  padding: 8px 0;
+  line-height: 2.2;
+  font-weight: 300;
+}
+
+div.projects {
+  overflow: hidden;
+  position: relative;
+  margin-top: 10%;
+}
+
+div.projects div.bg-projects {
+  z-index: -1;
+  position: absolute;
+  font-size: 20vw;
+  top: -8.4rem;
+  left: 11vw;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+div.projects-title {
+  padding: 10px;
+  text-align: center;
+}
+
+div.projects-title h2 {
+  color: #1abc9c;
+  font-weight: 400;
+  position: relative;
+  font-size: 4rem;
+  line-height: 6.7rem;
+}
+
+div.projects-title p {
+  color: #a1a0a0;
+  font-size: 1.2em;
+  padding: 8px 0;
+  line-height: 2.2;
+  font-weight: 300;
+}
+
+div.projects div.row-p {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.projects div.row-p div.img-box {
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+}
+
+div.projects div.row-p div.img-box:hover {
+  cursor: pointer;
+}
+
+div.projects div.row-p div.img-box:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+div.projects div.row-p div.img-box:hover div.overlay {
+  bottom: 0;
+}
+
+div.projects div.row-p img {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
+}
+
+div.projects div.row-p div.overlay {
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  bottom: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 55vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: center;
+}
+
+div.projects div.row-p div.overlay-text h4 {
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+div.projects div.row-p div.overlay-text p {
+  margin: 0;
+  color: #fff;
+}
+
+div.contact-me {
+  background-color: #1abc9c;
+  margin-top: 100px;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 72px;
+  color: white;
+  text-align: center;
+}
+
+.h4 {
+  font-weight: 400;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 0.75em;
+  color: white;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  text-align: center;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled-input {
+    width: 100%;
+  }
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 98% !important;
+  font-size: 1rem;
+  background-color: #1d1d1d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  text-align: center;
+  padding: 15px 35px;
+  border-radius: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1d1d1d;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+input[type="checkbox"] + label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+div.main-row {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.main-row iframe {
+  width: 50%;
+}
+
+@media screen and (max-width: 1333px) {
+  div.main-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.main-row iframe {
+    display: none;
+  }
+}
+
+div.social-media {
+  margin-top: 30px;
+  padding: 60px;
+}
+
+div.social-media div.container div.row {
+  text-align: center;
+}
+
+div.social-media div.container div.row ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.social-media div.container div.row ul li {
+  list-style: none;
+}
+
+div.social-media div.container div.row ul li i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.6em;
+  color: #1abc9c;
+  padding: 20px;
+}
+
+div.social-media div.container div.row ul li i:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
+  color: white;
+}
+
+div.social-media div.container div.row p {
+  font-size: 15px;
+  color: #999999;
+  opacity: 0.7;
+  padding: 5px;
+}
+/*# sourceMappingURL=main.css.map */
