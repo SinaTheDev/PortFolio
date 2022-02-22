@@ -1,0 +1,165 @@
+@media screen and (max-width: 1295px) {
+  nav {
+    flex-basis: 50% !important;
+    a {
+      font-size: 0.9rem !important;
+    }
+  }
+
+  .char {
+    font-size: 3rem !important;
+  }
+  div.slide {
+    div.center {
+      p.detail {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  div.logo {
+    flex-basis: 25% !important;
+    min-width: 25%;
+    h1 {
+      font-size: 1.4em !important;
+    }
+  }
+}
+
+@media screen and (max-width: 866px) {
+  header {
+    nav ul.navbar > li {
+      a.nav-link {
+        display: none !important;
+      }
+    }
+  }
+  div.bg-about {
+    display: none;
+  }
+  div.about-me{
+    div.about-me-content{
+      width: 100% !important;
+      h2{
+        font-size: 3.4rem !important;
+      }
+      p{
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  .char {
+    font-size: 5vw !important;
+  }
+  div.slide {
+    div.center {
+      p.detail {
+        font-size: 3vw !important;
+      }
+    }
+  }
+
+  i.hidden {
+    display: inline-block !important;
+    font-size: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  div.logo {
+    flex-basis: 55% !important;
+    h1 {
+      font-size: 1.2em !important;
+    }
+  }
+}
+
+@media screen and(max-width:1498px) {
+  div.bg-about {
+    top: -1rem !important;
+    left: 41vw !important;
+    font-size: 15rem !important;
+  }
+}
+
+@media screen and(max-width:1344px) {
+  div.bg-about {
+    top: -1rem !important;
+    left: 35vw !important;
+    font-size: 13rem !important;
+  }
+}
+
+@media screen and(max-width:1042px) {
+  div.bg-about {
+    top: -1rem !important;
+    left: 25vw !important;
+    font-size: 13rem !important;
+  }
+}
+
+@media screen and(max-width:1410px) {
+  div.skill-card{
+    width: 30% !important;
+  }
+}
+
+@media screen and(max-width:1251px) {
+  div.skills{
+    margin-top: 15% !important; 
+  }
+  div.row{
+    flex-direction: column !important;
+    div.skill-card{
+      width: 100% !important;
+      p{
+        font-size: 0.9rem !important;
+      }
+      h2{
+        font-size: 1.4rem !important;
+      }
+
+    }
+  }
+}
+ @media screen and(max-width:586px) {
+   div.skills{
+     margin-top: 35% !important;
+   }
+ }
+
+ @media screen and(max-width:1158px) {
+  div.projects {
+    div.bg-projects{
+      display: none;
+    }
+    div.row-p {
+      div.img-box {
+        width: 50% !important;
+        div.overlay {
+          height: 70vh !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:630px) {
+  div.projects {
+    div.row-p {
+      flex-direction: column;
+      div.img-box {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:410px) {
+  div.social-media {
+    ul{
+      flex-direction: column;
+    }
+  }
+}
